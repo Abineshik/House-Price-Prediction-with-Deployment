@@ -1,0 +1,961 @@
+.mediaViewInfo {
+	--web-view-name: iPhone XR, XS Max, 11 – 1;
+	--web-view-id: Web_1920__2;
+	--web-scale-to-fit: true;
+	--web-scale-to-fit-type: width;
+	--web-scale-on-resize: true;
+	--web-enable-deep-linking: true;
+}
+:root {
+	--web-view-ids: Web_1920__2;
+}
+.largeScreen {display: block;}
+
+/* @media only screen and (min-width: 601px) {
+        .smallScreen {display: none;}
+   } */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+}
+#Web_1920__2 {
+	position: absolute;
+	width: 414px;
+	height: 1131px;
+	background-color: rgba(255,255,255,1);
+	overflow: hidden;
+	--web-view-name: iPhone XR, XS Max, 11 – 1;
+	--web-view-id: Web_1920__2;
+	--web-scale-to-fit: true;
+	--web-scale-to-fit-type: width;
+	--web-scale-on-resize: true;
+	--web-enable-deep-linking: true;
+}
+#Rectangle_1_i {
+	fill: url(#Rectangle_1_i);
+}
+.Rectangle_1_i {
+	filter: drop-shadow(10px 20px 6px rgba(0, 0, 0, 0.161));
+	position: absolute;
+	overflow: visible;
+	width: 394px;
+	height: 1091px;
+	left: 20px;
+	top: 16px;
+}
+#House_Price_Prediction_tool {
+	left: 40px;
+	top: 36px;
+	position: absolute;
+	overflow: visible;
+	width: 335px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 26px;
+	color: rgba(112,112,112,1);
+}
+#Fill_in_the_details_ {
+	left: 40px;
+	top: 88px;
+	position: absolute;
+	overflow: visible;
+	width: 177px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 23px;
+	color: rgba(112,112,112,1);
+	text-decoration: underline;
+}
+#Group_2 {
+	position: absolute;
+	width: 345px;
+	height: 29px;
+	left: 32px;
+	top: 138px;
+	overflow: visible;
+}
+#Living_Measure {
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 143px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 21px;
+	color: rgba(112,112,112,1);
+}
+#Line_1 {
+	fill: transparent;
+	stroke: rgba(112,112,112,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Line_1 {
+	overflow: visible;
+	position: absolute;
+	width: 124px;
+	height: 1px;
+	left: 221px;
+	top: 28.5px;
+	transform: matrix(1,0,0,1,0,0);
+}
+
+#Group_7 {
+	position: absolute;
+	width: 358px;
+	height: 35px;
+	left: 32px;
+	top: 186px;
+	overflow: visible;
+}
+#Coast_View {
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 106px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 21px;
+	color: rgba(112,112,112,1);
+}
+#Rectangle_3 {
+	fill: rgba(255,255,255,1);
+	stroke: rgba(112,112,112,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Rectangle_3 {
+	position: absolute;
+	overflow: visible;
+	width: 137px;
+	height: 31px;
+	left: 221px;
+	top: 4px;
+}
+.Yes_Or_No {
+	width: 137px;
+	height: 31px;
+	left: 221px;
+	top: 3px;
+	opacity: 0.6;
+/* 	left: 246px;
+	top: 4px; */
+	position: absolute;
+	overflow: visible;
+/* 	width: 89px; */
+	white-space: nowrap;
+	text-align: center;
+	font-family: Segoe UI;
+	font-style: italic;
+	font-weight: normal;
+	font-size: 15px;
+	color: rgba(112,112,112,1);
+}
+.Yes_Or_No_left {
+	width: 137px;
+	height: 31px;
+	left: 221px;
+	top: 3px;
+	opacity: 0.6;
+/* 	left: 246px;
+	top: 4px; */
+	position: absolute;
+	overflow: visible;
+/* 	width: 89px; */
+	white-space: nowrap;
+	text-align: center;
+	font-family: Segoe UI;
+	font-style: italic;
+	font-weight: normal;
+	font-size: 15px;
+	color: rgba(112,112,112,1);
+}
+.Enter_in_sq_ft {
+	opacity: 0.61;
+	left: 221px;
+	top: 3px;
+	position: absolute;
+	overflow: visible;
+	width: 137px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Segoe UI;
+	font-style: italic;
+	font-weight: normal;
+	font-size: 20px;
+	color: rgba(112,112,112,1);
+}
+#Group_3 {
+	position: absolute;
+	width: 358px;
+	height: 35px;
+	left: 32px;
+	top: 241px;
+	overflow: visible;
+}
+#Basement_Measure {
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 179px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 21px;
+	color: rgba(112,112,112,1);
+}
+#Rectangle_3_w {
+	fill: rgba(255,255,255,1);
+	stroke: rgba(112,112,112,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Rectangle_3_w {
+	position: absolute;
+	overflow: visible;
+	width: 137px;
+	height: 31px;
+	left: 221px;
+	top: 4px;
+}
+#Yes_Or_No_x {
+	opacity: 0.6;
+	left: 246px;
+	top: 4px;
+	position: absolute;
+	overflow: visible;
+	width: 89px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Segoe UI;
+	font-style: italic;
+	font-weight: normal;
+	font-size: 20px;
+	color: rgba(112,112,112,1);
+}
+#Group_8 {
+	position: absolute;
+	width: 358px;
+	height: 32px;
+	left: 32px;
+	top: 299px;
+	overflow: visible;
+}
+#sight_view_scale {
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 149px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 21px;
+	color: rgba(112,112,112,1);
+}
+#Rectangle_3_ {
+	fill: rgba(255,255,255,1);
+	stroke: rgba(112,112,112,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Rectangle_3_ {
+	position: absolute;
+	overflow: visible;
+	width: 137px;
+	height: 31px;
+	left: 221px;
+	top: 1px;
+}
+#Yes_Or_No_ {
+	opacity: 0.6;
+	left: 251px;
+	top: 1px;
+	position: absolute;
+	overflow: visible;
+	width: 89px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Segoe UI;
+	font-style: italic;
+	font-weight: normal;
+	font-size: 20px;
+	color: rgba(112,112,112,1);
+}
+#Group_9 {
+	position: absolute;
+	width: 358px;
+	height: 31px;
+	left: 32px;
+	top: 355px;
+	overflow: visible;
+}
+#No_of_Bed_Rooms {
+	left: 0px;
+	top: 3px;
+	position: absolute;
+	overflow: visible;
+	width: 163px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 21px;
+	color: rgba(112,112,112,1);
+}
+#Rectangle_3_ba {
+	fill: rgba(255,255,255,1);
+	stroke: rgba(112,112,112,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Rectangle_3_ba {
+	position: absolute;
+	overflow: visible;
+	width: 137px;
+	height: 31px;
+	left: 221px;
+	top: 0px;
+}
+#Yes_Or_No_ba {
+	opacity: 0.6;
+	left: 248px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 89px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Segoe UI;
+	font-style: italic;
+	font-weight: normal;
+	font-size: 20px;
+	color: rgba(112,112,112,1);
+}
+#Group_10 {
+	position: absolute;
+	width: 358px;
+	height: 31px;
+	left: 32px;
+	top: 410px;
+	opacity: 0.6
+	overflow: visible;
+}
+#No_of_Bath_Rooms {
+	left: 0px;
+	top: 3px;
+	position: absolute;
+	overflow: visible;
+	width: 173px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 21px;
+	color: rgba(112,112,112,1);
+}
+#Rectangle_3_bb {
+	fill: rgba(255,255,255,1);
+	stroke: rgba(112,112,112,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Rectangle_3_bb {
+	position: absolute;
+	overflow: visible;
+	width: 137px;
+	height: 31px;
+	left: 221px;
+	top: 0px;
+}
+#Yes_Or_No_bb {
+	opacity: 0.6;
+	left: 246px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 89px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Segoe UI;
+	font-style: italic;
+	font-weight: normal;
+	font-size: 20px;
+	color: rgba(112,112,112,1);
+}
+#Group_4 {
+	position: absolute;
+	width: 358px;
+	height: 32px;
+	left: 32px;
+	top: 464px;
+	overflow: visible;
+}
+#Living_Measure_2015 {
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 192px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 21px;
+	color: rgba(112,112,112,1);
+}
+#Rectangle_3_bc {
+	fill: rgba(255,255,255,1);
+	stroke: rgba(112,112,112,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Rectangle_3_bc {
+	position: absolute;
+	overflow: visible;
+	width: 137px;
+	height: 31px;
+	left: 221px;
+	top: 1px;
+}
+#Yes_Or_No_bd {
+	opacity: 0.6;
+	left: 246px;
+	top: 1px;
+	position: absolute;
+	overflow: visible;
+	width: 89px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Segoe UI;
+	font-style: italic;
+	font-weight: normal;
+	font-size: 20px;
+	color: rgba(112,112,112,1);
+}
+#Group_5 {
+	position: absolute;
+	width: 358px;
+	height: 32px;
+	left: 32px;
+	top: 519px;
+	overflow: visible;
+}
+#Lot_Measure_2015 {
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 164px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 21px;
+	color: rgba(112,112,112,1);
+}
+#Rectangle_3_bg {
+	fill: rgba(255,255,255,1);
+	stroke: rgba(112,112,112,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Rectangle_3_bg {
+	position: absolute;
+	overflow: visible;
+	width: 137px;
+	height: 31px;
+	left: 221px;
+	top: 1px;
+}
+#Yes_Or_No_bh {
+	opacity: 0.6;
+	left: 246px;
+	top: 1px;
+	position: absolute;
+	overflow: visible;
+	width: 89px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Segoe UI;
+	font-style: italic;
+	font-weight: normal;
+	font-size: 20px;
+	color: rgba(112,112,112,1);
+}
+#Group_11 {
+	position: absolute;
+	width: 358px;
+	height: 31px;
+	left: 32px;
+	top: 575px;
+	overflow: visible;
+}
+#Furnished {
+	left: 0px;
+	top: 3px;
+	position: absolute;
+	overflow: visible;
+	width: 94px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 21px;
+	color: rgba(112,112,112,1);
+}
+#Rectangle_3_bk {
+	fill: rgba(255,255,255,1);
+	stroke: rgba(112,112,112,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Rectangle_3_bk {
+	position: absolute;
+	overflow: visible;
+	width: 137px;
+	height: 31px;
+	left: 221px;
+	top: 0px;
+}
+#Yes_Or_No_bl {
+	opacity: 0.6;
+	left: 246px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 89px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Segoe UI;
+	font-style: italic;
+	font-weight: normal;
+	font-size: 20px;
+	color: rgba(112,112,112,1);
+}
+#Group_12 {
+	position: absolute;
+	width: 358px;
+	height: 31px;
+	left: 32px;
+	top: 630px;
+	overflow: visible;
+}
+#Zipcode {
+	left: 0px;
+	top: 3px;
+	position: absolute;
+	overflow: visible;
+	width: 76px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 21px;
+	color: rgba(112,112,112,1);
+}
+#Condition {
+	left: 0px;
+	top: 3px;
+	position: absolute;
+	overflow: visible;
+	width: 76px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 21px;
+	color: rgba(112,112,112,1);
+}
+#Rectangle_3_bo {
+	fill: rgba(255,255,255,1);
+	stroke: rgba(112,112,112,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Rectangle_3_bo {
+	position: absolute;
+	overflow: visible;
+	width: 137px;
+	height: 31px;
+	left: 221px;
+	top: 0px;
+}
+#Yes_Or_No_bp {
+	opacity: 0.6;
+	left: 246px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 89px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Segoe UI;
+	font-style: italic;
+	font-weight: normal;
+	font-size: 20px;
+	color: rgba(112,112,112,1);
+}
+#Group_17 {
+	position: absolute;
+	width: 358px;
+	height: 31px;
+	left: 32px;
+	top: 685px;
+	overflow: visible;
+}
+#Quality {
+	left: 0px;
+	top: 3px;
+	position: absolute;
+	overflow: visible;
+	width: 72px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 21px;
+	color: rgba(112,112,112,1);
+}
+#Rectangle_3_bs {
+	fill: rgba(255,255,255,1);
+	stroke: rgba(112,112,112,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Rectangle_3_bs {
+	position: absolute;
+	overflow: visible;
+	width: 137px;
+	height: 31px;
+	left: 221px;
+	top: 0px;
+}
+#Yes_Or_No_bt {
+	opacity: 0.6;
+	left: 246px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 89px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Segoe UI;
+	font-style: italic;
+	font-weight: normal;
+	font-size: 20px;
+	color: rgba(112,112,112,1);
+}
+#Group_6 {
+	position: absolute;
+	width: 358px;
+	height: 31px;
+	left: 32px;
+	top: 740px;
+	overflow: visible;
+}
+#Planning_Year_to_sell {
+	left: 0px;
+	top: 2px;
+	position: absolute;
+	overflow: visible;
+	width: 197px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 21px;
+	color: rgba(112,112,112,1);
+}
+#Rectangle_3_bw {
+	fill: rgba(255,255,255,1);
+	stroke: rgba(112,112,112,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Rectangle_3_bw {
+	position: absolute;
+	overflow: visible;
+	width: 137px;
+	height: 31px;
+	left: 221px;
+	top: 0px;
+}
+#Yes_Or_No_bx {
+	opacity: 0.6;
+	left: 246px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 89px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Segoe UI;
+	font-style: italic;
+	font-weight: normal;
+	font-size: 20px;
+	color: rgba(112,112,112,1);
+}
+#Group_14 {
+	position: absolute;
+	width: 358px;
+	height: 31px;
+	left: 32px;
+	top: 795px;
+	overflow: visible;
+}
+#Year_Build {
+	left: 0px;
+	top: 3px;
+	position: absolute;
+	overflow: visible;
+	width: 99px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 21px;
+	color: rgba(112,112,112,1);
+}
+#Rectangle_3_b {
+	fill: rgba(255,255,255,1);
+	stroke: rgba(112,112,112,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Rectangle_3_b {
+	position: absolute;
+	overflow: visible;
+	width: 137px;
+	height: 31px;
+	left: 221px;
+	top: 0px;
+}
+#Yes_Or_No_b {
+	opacity: 0.6;
+	left: 246px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 89px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Segoe UI;
+	font-style: italic;
+	font-weight: normal;
+	font-size: 20px;
+	color: rgba(112,112,112,1);
+}
+#Group_15 {
+	position: absolute;
+	width: 358px;
+	height: 31px;
+	left: 32px;
+	top: 850px;
+	overflow: visible;
+}
+#Year_Renovated {
+	left: 0px;
+	top: 3px;
+	position: absolute;
+	overflow: visible;
+	width: 150px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 21px;
+	color: rgba(112,112,112,1);
+}
+
+
+#Yes_Or_No_ca {
+	opacity: 0.6;
+	left: 246px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 89px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Segoe UI;
+	font-style: italic;
+	font-weight: normal;
+	font-size: 20px;
+	color: rgba(112,112,112,1);
+}
+#Group_16 {
+	position: absolute;
+	width: 358px;
+	height: 32px;
+	left: 32px;
+	top: 904px;
+	overflow: visible;
+}
+#Group_18 {
+	position: absolute;
+	width: 358px;
+	height: 32px;
+	left: 32px;
+	top: 958px;
+	overflow: visible;
+}
+#Group_19 {
+	position: absolute;
+	width: 358px;
+	height: 32px;
+	left: 32px;
+	top: 1012px;
+	overflow: visible;
+}
+#Coast_View_b {
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 106px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 21px;
+	color: rgba(112,112,112,1);
+}
+#Rectangle_3_cb {
+	fill: rgba(255,255,255,1);
+	stroke: rgba(112,112,112,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Rectangle_3_cb {
+	position: absolute;
+	overflow: visible;
+	width: 137px;
+	height: 31px;
+	left: 221px;
+	top: 1px;
+}
+#Yes_Or_No_cb {
+	opacity: 0.6;
+	left: 246px;
+	top: 1px;
+	position: absolute;
+	overflow: visible;
+	width: 89px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Segoe UI;
+	font-style: italic;
+	font-weight: normal;
+	font-size: 20px;
+	color: rgba(112,112,112,1);
+}
+#Group_13 {
+	position: absolute;
+	width: 253px;
+	height: 44px;
+	left: 81px;
+	top: 1064px;
+	overflow: visible;
+}
+#Rectangle_15 {
+	fill: rgba(236,236,236,1);
+}
+.Rectangle_15 {
+	filter: drop-shadow(10px 10px 6px rgba(0, 0, 0, 0.161));
+	position: absolute;
+	overflow: visible;
+	width: 272px;
+	height: 63px;
+	left: 0px;
+	top: 0px;
+}
+#Click_Here_to_Predict {
+	left: 11px;
+	top: 7px;
+	position: absolute;
+	overflow: visible;
+	width: 232px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 25px;
+	color: rgba(112,112,112,1);
+}

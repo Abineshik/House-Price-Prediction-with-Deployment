@@ -1,0 +1,131 @@
+.mediaViewInfo {
+	--web-view-name: mobile_result;
+	--web-view-id: mobile_result;
+	--web-scale-to-fit: true;
+	--web-scale-to-fit-type: width;
+	--web-scale-on-resize: true;
+	--web-enable-deep-linking: true;
+}
+:root {
+	--web-view-ids: mobile_result;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+}
+#web_result {
+	position: absolute;
+	width: 414px;
+	height: 896px;
+	background-color: rgba(255,255,255,1);
+	overflow: hidden;
+	--web-view-name: mobile_result;
+	--web-view-id: mobile_result;
+	--web-scale-to-fit: true;
+	--web-scale-to-fit-type: width;
+	--web-scale-on-resize: true;
+	--web-enable-deep-linking: true;
+}
+.Rectangle_16_l {
+	display: none;
+}
+
+#Rectangle_17_l {
+	fill: url(#Rectangle_17_l);
+}
+.Rectangle_17_l {
+	filter: drop-shadow(10px 20px 6px rgba(0, 0, 0, 0.161));
+	position: absolute;
+	overflow: visible;
+	width: 396px;
+	height: 886px;
+	left: 19px;
+	top: 19px;
+	display: inline;
+}
+#Back_to_Menu {
+	left: 145px;
+	top: 604px;
+	position: absolute;
+	overflow: visible;
+	width: 126px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	color: rgba(112,112,112,1);
+}
+#The_Predicted_price_for_ {
+	left: 42px;
+	top: 178px;
+	position: absolute;
+	overflow: visible;
+	width: 332px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 30px;
+	color: rgba(112,112,112,1);
+}
+#your_property_is_ {
+	left: 90px;
+	top: 226px;
+	position: absolute;
+	overflow: visible;
+	width: 236px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 30px;
+	color: rgba(112,112,112,1);
+}
+#ID100000_ {
+	left: 121px;
+	top: 317px;
+	position: absolute;
+	overflow: visible;
+	width: 173px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 40px;
+	color: rgba(112,112,112,1);
+}
+#Click_here_to_download_ {
+	left: 81px;
+	top: 448px;
+	position: absolute;
+	overflow: visible;
+	width: 254px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 23px;
+	color: rgba(112,112,112,1);
+}
+#the_details {
+	left: 151px;
+	top: 479px;
+	position: absolute;
+	overflow: visible;
+	width: 114px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 23px;
+	color: rgba(112,112,112,1);
+}

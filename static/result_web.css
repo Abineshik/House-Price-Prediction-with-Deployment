@@ -1,0 +1,132 @@
+.mediaViewInfo {
+	--web-view-name: web_result;
+	--web-view-id: web_result;
+	--web-scale-to-fit: true;
+	--web-scale-to-fit-type: width;
+	--web-enable-scale-up: true;
+	--web-scale-on-resize: true;
+	--web-enable-deep-linking: true;
+}
+:root {
+	--web-view-ids: web_result;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+}
+#web_result {
+	position: absolute;
+	width: 1920px;
+	height: 1080px;
+	background-color: rgba(255,255,255,1);
+	overflow: hidden;
+	--web-view-name: web_result;
+	--web-view-id: web_result;
+	--web-scale-to-fit: true;
+	--web-scale-to-fit-type: width;
+	--web-enable-scale-up: true;
+	--web-scale-on-resize: true;
+	--web-enable-deep-linking: true;
+}
+.Rectangle_17_l {
+	display: none;
+}
+#Rectangle_16_l {
+	fill: url(#Rectangle_16_l);
+}
+.Rectangle_16_l {
+	filter: drop-shadow(10px 20px 6px rgba(0, 0, 0, 0.161));
+	position: absolute;
+	overflow: visible;
+	width: 1860px;
+	height: 1034px;
+	left: 40px;
+	top: 35px;
+	display: inline;
+}
+#The_Predicted_price_for_ {
+	left: 740px;
+	top: 242px;
+	position: absolute;
+	overflow: visible;
+	width: 442px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 40px;
+	color: rgba(112,112,112,1);
+}
+#Click_here_to_download_ {
+	left: 773px;
+	top: 540px;
+	position: absolute;
+	overflow: visible;
+	width: 332px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 30px;
+	color: rgba(112,112,112,1);
+}
+#Back_to_Menu {
+	left: 845px;
+	top: 706px;
+	position: absolute;
+	overflow: visible;
+	width: 188px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 30px;
+	color: rgba(112,112,112,1);
+}
+#your_property_is_ {
+	left: 804px;
+	top: 295px;
+	position: absolute;
+	overflow: visible;
+	width: 314px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 40px;
+	color: rgba(112,112,112,1);
+}
+#ID100000_ {
+	left: 852px;
+	top: 401px;
+	position: absolute;
+	overflow: visible;
+	width: 173px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 40px;
+	color: rgba(112,112,112,1);
+}
+#the_details {
+	left: 852px;
+	top: 580px;
+	position: absolute;
+	overflow: visible;
+	width: 149px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 30px;
+	color: rgba(112,112,112,1);
+}
