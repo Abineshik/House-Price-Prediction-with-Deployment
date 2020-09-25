@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prediction Page</title>
+<link rel="stylesheet" type="text/css" id="applicationStylesheet" href="web_result.css"/>
+<script id="applicationScript" type="text/javascript" src="web_result.js"></script>
+<link rel="stylesheet" media="screen and (min-width: 601px)"  type="text/css" id="applicationStylesheet" href="{{ url_for('static',filename='result_web.css') }}"/>  
+<link rel="stylesheet" media="screen and (max-width: 600px)"  type="text/css" id="applicationStylesheet" href="{{ url_for('static',filename='result_mobile.css') }}"/>
+<script id="applicationScript" media="screen and (min-width: 601px)" type="text/javascript" src="{{ url_for('static',filename='result_web.js') }}"></script>
+<script id="applicationScript"  media="screen and (max-width: 600px)" type="text/javascript" src="{{ url_for('static',filename='result_mobile.js') }}"></script>
+
+<!-- 
+<link rel="stylesheet" media="screen and (min-width: 601px)"  type="text/css" id="applicationStylesheet" href="web_result.css"/>  
+<link rel="stylesheet" media="screen and (max-width: 600px)"  type="text/css" id="applicationStylesheet" href="mobile_result.css"/>
+<script id="applicationScript" media="screen and (min-width: 601px)" type="text/javascript" src="web_result.js"></script>
+<script id="applicationScript"  media="screen and (max-width: 600px)" type="text/javascript" src="static',filename='mobile_result.js"></script> -->
+</head>
+<body>
+<div id="web_result">
+	<svg class="Rectangle_17_l">
+		<linearGradient id="Rectangle_17_l" spreadMethod="pad" x1="0.5" x2="0.5" y1="0" y2="1">
+			<stop offset="0" stop-color="#e8e4f2" stop-opacity="1"></stop>
+			<stop offset="1" stop-color="#fff" stop-opacity="0.961"></stop>
+		</linearGradient>
+		<rect id="Rectangle_17_l" rx="0" ry="0" x="0" y="0" width="377" height="857">
+		</rect>
+	</svg>
+	<svg class="Rectangle_16_l">
+		<linearGradient id="Rectangle_16_l" spreadMethod="pad" x1="0.5" x2="0.5" y1="0" y2="1">
+			<stop offset="0" stop-color="#e8e4f2" stop-opacity="1"></stop>
+			<stop offset="1" stop-color="#fff" stop-opacity="0.961"></stop>
+		</linearGradient>
+		<rect id="Rectangle_16_l" rx="0" ry="0" x="0" y="0" width="1841" height="1005">
+		</rect>
+	</svg>
+
+	<div id="The_Predicted_price_for_">
+		<span>The Predicted price for </span>
+	</div>
+	<div id="Download">
+		<div >
+			<button id="Click_here_to_download_"  data={{output_data}}>Click here to download </button>		
+		</div>
+		<div >
+			<button id="the_details">the details</button>
+		</div>
+	</div>
+	<form id="back" action="{{ url_for('back') }}" >
+		<div >
+			<button id="Back_to_Menu" type="submit" form="back" value="Submit">Try Another</button>		
+		</div>
+	</form>
+	<div id="your_property_is_">
+		<span>your property is </span>
+	</div>
+	<div id="ID100000_">
+		<span>{{pred}} $</span>
+	</div>
+
+</div>
+<script type="text/javascript">
+document.getElementById("Download").addEventListener("click", exportJson);
+
+function exportJson() {
+	var data = '{{output_data|tojson}}';
+	data = JSON.parse(data);
+	download_data = Object.keys(data).join(',') + '\n';
+	download_data += Object.values(data).join(',') + '\n';
+	<!-- console.log(download_data); -->
+	var element = document.createElement('a');
+	filename = 'houseprice.csv'
+	element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(download_data));
+	element.setAttribute('download', filename);
+
+	element.style.display = 'none';
+	document.body.appendChild(element);
+
+	element.click();
+
+	document.body.removeChild(element);
+}
+
+</script>
+</body>
+</html>

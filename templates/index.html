@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</script>
+</script>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>House_Price_Prediction_tool</title>
+<link rel="stylesheet" media="screen and (min-width: 601px)"  type="text/css" id="applicationStylesheet" href="{{ url_for('static',filename='index_web.css') }}">  
+<link rel="stylesheet" media="screen and (max-width: 600px)"  type="text/css" id="applicationStylesheet" href="{{ url_for('static',filename='index_mobile.css') }}">
+<script id="applicationScript" media="screen and (min-width: 601px)" type="text/javascript" src="{{ url_for('static',filename='index_web.js') }}"></script>
+<script id="applicationScript"  media="screen and (max-width: 600px)" type="text/javascript" src="{{ url_for('static',filename='index_mobile.js') }}"></script>
+
+</head>
+<body>
+
+<div id="Web_1920__2" >
+	<div>
+<!-- 		<div class="smallScreen">
+			<svg  class="Rectangle_1_i">
+				<linearGradient id="Rectangle_1_i" spreadMethod="pad" x1="0.5" x2="0.5" y1="0" y2="1">
+					<stop offset="0" stop-color="#e8e4f2" stop-opacity="1"></stop>
+					<stop offset="1" stop-color="#fff" stop-opacity="0.961"></stop>
+				</linearGradient>
+				<rect id="Rectangle_1_i" rx="0" ry="0" x="0" y="0" width="375" height="1062">
+				</rect>
+			</svg>
+		</div>
+		<div class="largeScreen">
+			<svg  class="Rectangle_1_i">
+				<linearGradient id="Rectangle_1_i" spreadMethod="pad" x1="0.5" x2="0.5" y1="0" y2="1">
+					<stop offset="0" stop-color="#e8e4f2" stop-opacity="1"></stop>
+					<stop offset="1" stop-color="#fff" stop-opacity="0.961"></stop>
+				</linearGradient>
+				<rect id="Rectangle_1_i" rx="0" ry="0" x="0" y="0" width="1841" height="1344">
+				</rect>
+			</svg>
+		</div>
+
+	</div>
+ -->
+  	<div >
+		<svg  class="Rectangle_1_i">
+			<linearGradient id="Rectangle_1_i" spreadMethod="pad" x1="0.5" x2="0.5" y1="0" y2="1">
+				<stop offset="0" stop-color="#e8e4f2" stop-opacity="1"></stop>
+				<stop offset="1" stop-color="#fff" stop-opacity="0.961"></stop>
+			</linearGradient>
+			<rect id="Rectangle_1_i" rx="0" ry="0" x="0" y="0" width="375" height="1062">
+			</rect>
+		</svg>
+	</div>
+ 	<div >
+		<svg  class="Rectangle_1_i">
+			<linearGradient id="Rectangle_1_i" spreadMethod="pad" x1="0.5" x2="0.5" y1="0" y2="1">
+				<stop offset="0" stop-color="#e8e4f2" stop-opacity="1"></stop>
+				<stop offset="1" stop-color="#fff" stop-opacity="0.961"></stop>
+			</linearGradient>
+			<rect id="Rectangle_1_i" rx="0" ry="0" x="0" y="0" width="1841" height="1344">
+			</rect>
+		</svg>
+	</div>
+
+
+	<div id="House_Price_Prediction_tool">
+		<span>House Price Prediction tool</span>
+	</div>
+	<div id="Fill_in_the_details_">
+		<span>Fill in the details </span>
+	</div>
+	<form id="form1" action="{{ url_for('predict') }}" method="POST">
+		<div id="Group_2">
+			<div id="Living_Measure">
+				<span>Living Measure</span>
+			</div>
+	
+			<div >
+				<input type="number" class="Enter_in_sq_ft" name="living_measure" min="300" max="13500" placeholder="Area Sq.ft" required>
+			</div>
+		</div>
+		<div id="Group_7">
+			<div id="Coast_View">
+				<span>Coast View</span>
+			</div>
+			<svg class="Rectangle_3">
+
+			</svg>
+			<div >
+				<select class="Yes_Or_No" class="Rectangle_3" name="coast" required>
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</select>
+			</div>
+
+		</div>
+		<div id="Group_8">
+			<div id="sight_view_scale">
+				<span>sight view scale</span>
+			</div>
+
+			<div >
+				<select class="Yes_Or_No" class="Rectangle_3" name="sight" required>
+					<option value="1">0</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+				</select>
+			</div>
+	
+		</div>
+		<div id="Group_9">
+			<div id="No_of_Bed_Rooms">
+				<span>No of Bed Rooms</span>
+			</div>
+
+			<div >
+				<select class="Yes_Or_No" class="Rectangle_3" name="room_bed" required>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">>5</option>
+				</select>				
+			</div>
+
+		</div>
+		<div id="Group_10">
+			<div id="No_of_Bath_Rooms">
+				<span>No of Bath Rooms</span>
+			</div>
+
+			<div >
+				<select class="Yes_Or_No"  name="room_bath" required>
+					<option value="0.75">0.75</option>
+					<option value="1">1</option>
+					<option value="1.25">1.25</option>
+					<option value="1.5">1.5</option>
+					<option value="1.75">1.75</option>
+					<option value="2">2</option>
+					<option value="2.25">2.25</option>
+					<option value="2.5">2.5</option>
+					<option value="2.75">2.75</option>
+					<option value="3">3</option>
+					<option value="3.25">3.25</option>
+					<option value="3.5">3.5</option>
+					<option value="3.75">3.75</option>
+					<option value="4">>3.75</option>
+					
+				</select>
+			</div>
+
+		</div>
+		<div id="Group_11">
+			<div id="Furnished">
+				<span>Furnished</span>
+			</div>
+
+			<div >
+				<select class="Yes_Or_No"  name="furnished" required>
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</select>
+			</div>
+
+		</div>
+		<div id="Group_17">
+			<div id="Quality">
+				<span>Quality</span>
+			</div>
+
+			<div >
+				<select class="Yes_Or_No"  name="quality" required>
+					<option value="5"><=5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+					<option value="11">>=11</option>
+
+				</select>
+			</div>
+
+		</div>
+		<div id="Group_12">
+			<div id="Condition">
+				<span>Condition</span>
+			</div>
+
+			<div >
+				<select class="Yes_Or_No"  name="condition" required>
+					<option value="2"><=2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</select>
+			</div>
+
+		</div>
+		<div id="Group_19">
+			<div id="Year_Build">
+				<span>Total Floors</span>
+			</div>
+
+			<div >
+				<select class="Yes_Or_No_left"  name="ceil" required>
+					<option value="1">1</option>
+					<option value="2">1.5</option>
+					<option value="3">2</option>
+					<option value="4">>2</option>
+				</select>
+			</div>
+
+		</div>
+		<div id="Group_18">
+			<div id="Zipcode">
+				<span>Zipcode</span>
+			</div>
+
+			
+			<div>
+				<datalist id="suggestions">
+					<option>98133</option>
+					<option>98023</option>
+					<option>98038</option>
+					<option>98115</option>
+					<option>98059</option>
+					<option>98028</option>
+					<option>98119</option>
+					<option>98003</option>
+					<option>98117</option>
+					<option>98092</option>
+					<option>98053</option>
+					<option>98166</option>
+					<option>98011</option>
+					<option>98058</option>
+					<option>98178</option>
+					<option>98144</option>
+					<option>98031</option>
+					<option>98125</option>
+					<option>98103</option>
+					<option>98004</option>
+					<option>98056</option>
+					<option>98122</option>
+					<option>98006</option>
+					<option>98074</option>
+					<option>98106</option>
+					<option>98034</option>
+					<option>98001</option>
+					<option>98075</option>
+					<option>98107</option>
+					<option>98002</option>
+					<option>98027</option>
+					<option>98126</option>
+					<option>98022</option>
+					<option>98055</option>
+					<option>98188</option>
+					<option>98198</option>
+					<option>98136</option>
+					<option>98146</option>
+					<option>98052</option>
+					<option>98014</option>
+					<option>98116</option>
+					<option>98168</option>
+					<option>98010</option>
+					<option>98033</option>
+					<option>98005</option>
+					<option>98042</option>
+					<option>98045</option>
+					<option>98008</option>
+					<option>98065</option>
+					<option>98105</option>
+					<option>98118</option>
+					<option>98032</option>
+					<option>98077</option>
+					<option>98199</option>
+					<option>98040</option>
+					<option>98155</option>
+					<option>98177</option>
+					<option>98112</option>
+					<option>98007</option>
+					<option>98029</option>
+					<option>98019</option>
+					<option>98030</option>
+					<option>98039</option>
+					<option>98148</option>
+					<option>98072</option>
+					<option>98070</option>
+					<option>98108</option>
+					<option>98109</option>
+					<option>98102</option>
+					<option>98024</option>
+				</datalist>	
+				<input class="Yes_Or_No" name="zipcode" placeholder="Location"  autoComplete="on" list="suggestions" required/>				
+<!-- 				<select class="Yes_Or_No" list="suggestions" name="Zipcode">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</select> -->
+			</div>
+
+		</div>
+		<div id="Group_16">
+			<div id="Year_Build">
+				<span>Planning Year to sell</span>
+			</div>
+
+			<div >
+				<datalist id="dayhours">
+					<option>2015</option>
+					<option>2016</option>
+					<option>2017</option>
+					<option>2018</option>
+					<option>2019</option>
+					<option>2020</option>									
+				</datalist>
+				<input type="number" class="Yes_Or_No_left" name="dayhours" placeholder="Enter Year" autoComplete="on", list="dayhours" required/>
+			</div>
+		</div>
+		<div id="Group_14">
+			<div id="Year_Build">
+				<span>Year Build</span>
+			</div>
+
+			<div >
+				<datalist id="yr_build">
+					<option>1900</option>
+					<option>1901</option>
+					<option>1902</option>
+					<option>1903</option>
+					<option>1904</option>
+					<option>1905</option>
+					<option>1906</option>
+					<option>1907</option>
+					<option>1908</option>
+					<option>1909</option>
+					<option>1910</option>
+					<option>1911</option>
+					<option>1912</option>
+					<option>1913</option>
+					<option>1914</option>
+					<option>1915</option>
+					<option>1916</option>
+					<option>1917</option>
+					<option>1918</option>
+					<option>1919</option>
+					<option>1920</option>
+					<option>1921</option>
+					<option>1922</option>
+					<option>1923</option>
+					<option>1924</option>
+					<option>1925</option>
+					<option>1926</option>
+					<option>1927</option>
+					<option>1928</option>
+					<option>1929</option>
+					<option>1930</option>
+					<option>1931</option>
+					<option>1932</option>
+					<option>1933</option>
+					<option>1934</option>
+					<option>1935</option>
+					<option>1936</option>
+					<option>1937</option>
+					<option>1938</option>
+					<option>1939</option>
+					<option>1940</option>
+					<option>1941</option>
+					<option>1942</option>
+					<option>1943</option>
+					<option>1944</option>
+					<option>1945</option>
+					<option>1946</option>
+					<option>1947</option>
+					<option>1948</option>
+					<option>1949</option>
+					<option>1950</option>
+					<option>1951</option>
+					<option>1952</option>
+					<option>1953</option>
+					<option>1954</option>
+					<option>1955</option>
+					<option>1956</option>
+					<option>1957</option>
+					<option>1958</option>
+					<option>1959</option>
+					<option>1960</option>
+					<option>1961</option>
+					<option>1962</option>
+					<option>1963</option>
+					<option>1964</option>
+					<option>1965</option>
+					<option>1966</option>
+					<option>1967</option>
+					<option>1968</option>
+					<option>1969</option>
+					<option>1970</option>
+					<option>1971</option>
+					<option>1972</option>
+					<option>1973</option>
+					<option>1974</option>
+					<option>1975</option>
+					<option>1976</option>
+					<option>1977</option>
+					<option>1978</option>
+					<option>1979</option>
+					<option>1980</option>
+					<option>1981</option>
+					<option>1982</option>
+					<option>1983</option>
+					<option>1984</option>
+					<option>1985</option>
+					<option>1986</option>
+					<option>1987</option>
+					<option>1988</option>
+					<option>1989</option>
+					<option>1990</option>
+					<option>1991</option>
+					<option>1992</option>
+					<option>1993</option>
+					<option>1994</option>
+					<option>1995</option>
+					<option>1996</option>
+					<option>1997</option>
+					<option>1998</option>
+					<option>1999</option>
+					<option>2000</option>
+					<option>2001</option>
+					<option>2002</option>
+					<option>2003</option>
+					<option>2004</option>
+					<option>2005</option>
+					<option>2006</option>
+					<option>2007</option>
+					<option>2008</option>
+					<option>2009</option>
+					<option>2010</option>
+					<option>2011</option>
+					<option>2012</option>
+					<option>2013</option>
+					<option>2014</option>
+					<option>2015</option>				
+				</datalist>
+				<input type="number" class="Yes_Or_No_left" name="yr_built" placeholder="Enter Year"  autoComplete="on" list="yr_build" required>
+
+			</div>
+		</div>
+		<div id="Group_15">
+			<div id="Year_Renovated">
+				<span>Year Renovated</span>
+			</div>
+
+			<div >
+				<datalist id="yr_renovated">
+					<option value="0">Not Renovated</option>
+					<option>1934</option>
+					<option>1935</option>
+					<option>1936</option>
+					<option>1937</option>
+					<option>1938</option>
+					<option>1939</option>
+					<option>1940</option>
+					<option>1941</option>
+					<option>1942</option>
+					<option>1943</option>
+					<option>1944</option>
+					<option>1945</option>
+					<option>1946</option>
+					<option>1947</option>
+					<option>1948</option>
+					<option>1949</option>
+					<option>1950</option>
+					<option>1951</option>
+					<option>1952</option>
+					<option>1953</option>
+					<option>1954</option>
+					<option>1955</option>
+					<option>1956</option>
+					<option>1957</option>
+					<option>1958</option>
+					<option>1959</option>
+					<option>1960</option>
+					<option>1961</option>
+					<option>1962</option>
+					<option>1963</option>
+					<option>1964</option>
+					<option>1965</option>
+					<option>1966</option>
+					<option>1967</option>
+					<option>1968</option>
+					<option>1969</option>
+					<option>1970</option>
+					<option>1971</option>
+					<option>1972</option>
+					<option>1973</option>
+					<option>1974</option>
+					<option>1975</option>
+					<option>1976</option>
+					<option>1977</option>
+					<option>1978</option>
+					<option>1979</option>
+					<option>1980</option>
+					<option>1981</option>
+					<option>1982</option>
+					<option>1983</option>
+					<option>1984</option>
+					<option>1985</option>
+					<option>1986</option>
+					<option>1987</option>
+					<option>1988</option>
+					<option>1989</option>
+					<option>1990</option>
+					<option>1991</option>
+					<option>1992</option>
+					<option>1993</option>
+					<option>1994</option>
+					<option>1995</option>
+					<option>1996</option>
+					<option>1997</option>
+					<option>1998</option>
+					<option>1999</option>
+					<option>2000</option>
+					<option>2001</option>
+					<option>2002</option>
+					<option>2003</option>
+					<option>2004</option>
+					<option>2005</option>
+					<option>2006</option>
+					<option>2007</option>
+					<option>2008</option>
+					<option>2009</option>
+					<option>2010</option>
+					<option>2011</option>
+					<option>2012</option>
+					<option>2013</option>
+					<option>2014</option>
+					<option>2015</option>
+				</datalist>
+				<input type="number" class="Yes_Or_No_left" name="yr_renovated" placeholder="Enter Year" autoComplete="on" list="yr_renovated" required>
+			</div>
+		</div>
+		<div id="Group_6">
+			<div id="Year_Build">
+				<span>Total Area</span>
+			</div>
+
+			<div >
+				<input type="number" class="Enter_in_sq_ft" name="total_area" min="1400" max="1000000" placeholder="Area Sq.ft" required>
+			</div>
+		</div>
+		<div id="Group_5">
+			<div id="Lot_Measure_2015">
+				<span>Lot Measure 2015</span>
+			</div>
+
+			<div >
+				<input type="number" class="Enter_in_sq_ft"  name="lot_measure15" min="650" max="450000"  placeholder="Area Sq.ft" required>
+			</div>
+		</div>
+		<div id="Group_4">
+			<div id="Living_Measure_2015">
+				<span>Living Measure 2015</span>
+			</div>
+
+			<div >
+				<input type="number" class="Enter_in_sq_ft" name="living_measure15" min="400" max="6500"  placeholder="Area Sq.ft" required>
+			</div>
+		</div>
+		<div id="Group_3">
+			<div id="Basement_Measure">
+				<span>Basement Measure</span>
+			</div>
+
+			<div >
+			
+				<input type="number" class="Enter_in_sq_ft" name="basement" min="0" max="4000"  title="Enter 0 for No Basement"  placeholder="Area Sq.ft" required>
+			</div>
+		</div>
+		<div id="Group_13">
+		<div>
+			<div >
+				<svg class="Rectangle_15">
+					<rect id="Rectangle_15" rx="30" ry="30" x="0" y="0" width="400" height="63">
+					</rect>
+				</svg>
+			</div>
+			<div >
+				<svg class="Rectangle_15">
+					<rect id="Rectangle_15" rx="22" ry="22" x="0" y="0" width="253" height="44">
+					</rect>
+				</svg>			
+			</div>
+		</div>
+			<div >
+				<button id="Click_Here_to_Predict" type="submit" form="form1" value="Submit">Click here to predict</button>
+			</div>
+		</form>
+	</div>
+</div>
+</body>
+</html>
