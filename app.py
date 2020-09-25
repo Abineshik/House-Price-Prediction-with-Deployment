@@ -3,7 +3,7 @@
 from flask import Flask, render_template, request, jsonify
 import pickle
 import numpy as np
-from helper_function import AgeFeatureExtract, OutlierClipping, datatype_converter
+#from helper_function import AgeFeatureExtract, OutlierClipping, datatype_converter
 import pandas as pd
 app = Flask(__name__)
 
