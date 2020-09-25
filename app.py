@@ -37,8 +37,7 @@ def predict():
 #def download():
 #    print('check')
 #    pass
-if __name__ == '__main__':
-    app.run(debug=True, use_reloader=False)
+
 
 from sklearn.base import BaseEstimator, TransformerMixin
 
@@ -80,3 +79,5 @@ class OutlierClipping(BaseEstimator, TransformerMixin):
     df.loc[:,'condition'] = df.loc[:,'condition'].clip(lower=2)
     df.loc[:,'quality'] = df.loc[:,'quality'].clip(lower=5, upper=11)
     return df[['room_bed', 'room_bath', 'ceil']]
+if __name__ == '__main__':
+    app.run(debug=True, use_reloader=False)
