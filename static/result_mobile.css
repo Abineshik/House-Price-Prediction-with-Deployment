@@ -58,6 +58,7 @@
 	font-weight: bold;
 	font-size: 20px;
 	color: rgba(112,112,112,1);
+	cursor: pointer;
 }
 #The_Predicted_price_for_ {
 	left: 42px;
@@ -88,7 +89,7 @@
 	color: rgba(112,112,112,1);
 }
 #ID100000_ {
-	left: 121px;
+	left: 90px;
 	top: 317px;
 	position: absolute;
 	overflow: visible;
@@ -114,6 +115,7 @@
 	font-weight: bold;
 	font-size: 23px;
 	color: rgba(112,112,112,1);
+	cursor: pointer;
 }
 #the_details {
 	left: 151px;
@@ -128,4 +130,5 @@
 	font-weight: bold;
 	font-size: 23px;
 	color: rgba(112,112,112,1);
+	cursor: pointer;
 }
