@@ -9,4 +9,4 @@ MarkupSafe==1.1.1
 Werkzeug==0.16.0
 click==7.0
 setuptools==49.6.0
-
+xgboost==1.1.1
